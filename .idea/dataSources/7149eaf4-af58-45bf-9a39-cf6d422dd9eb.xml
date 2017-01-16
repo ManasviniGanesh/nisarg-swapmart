@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="swapmart@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="swapmart">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="news"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="phpmyadmin"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="2" name="advertisement">
+      <Comment>advertisement description</Comment>
+    </table>
+    <table id="10" parent="2" name="bookmark">
+      <Comment>Bookmark feeds</Comment>
+    </table>
+    <table id="11" parent="2" name="chatbox">
+      <Comment>Chat records</Comment>
+    </table>
+    <table id="12" parent="2" name="report"/>
+    <table id="13" parent="2" name="user">
+      <Comment>user data</Comment>
+    </table>
+    <table id="14" parent="2" name="user_do_not_login"/>
+    <column id="15" parent="9" name="add_id">
+      <Position>1</Position>
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="9" name="username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="9" name="title_of_add">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="9" name="add_status">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="9" name="rent">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;AVAILABLE&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="9" name="category">
+      <Position>6</Position>
+      <Comment>notes,books,qpaper,stationary,electronics,movies,others,quantum,decode</Comment>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;others&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="9" name="price_status">
+      <Position>7</Position>
+      <Comment>0-free,1-rent,2-sale</Comment>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="9" name="cost">
+      <Position>8</Position>
+      <DataType>smallint(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="9" name="pic_upload_dir">
+      <Position>9</Position>
+      <DataType>varchar(5000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="9" name="description">
+      <Position>10</Position>
+      <DataType>varchar(140)|0</DataType>
+    </column>
+    <column id="25" parent="9" name="posted_time">
+      <Position>11</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="26" parent="9" name="add_id">
+      <ColNames>add_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="9" name="PRIMARY">
+      <ColNames>add_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="28" parent="9" name="add_id">
+      <ColNames>add_id</ColNames>
+      <UnderlyingIndexName>add_id</UnderlyingIndexName>
+    </key>
+    <column id="29" parent="10" name="add_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="10" name="username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="10" name="title_of_add">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="10" name="cost">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="10" name="rent">
+      <Position>5</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="34" parent="10" name="pic_upload_dir">
+      <Position>6</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="10" name="PRIMARY">
+      <ColNames>add_id
+username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="11" name="add_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="11" name="uname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="11" name="advertUname">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="11" name="chat">
+      <Position>4</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="11" name="status">
+      <Position>5</Position>
+      <DataType>varchar(5)|0</DataType>
+    </column>
+    <key id="41" parent="11" name="PRIMARY">
+      <ColNames>add_id
+uname
+advertUname</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="12" name="email">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="12" name="description">
+      <Position>3</Position>
+      <DataType>mediumtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="45" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="13" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="13" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="13" name="username">
+      <Position>4</Position>
+      <Comment>username of user</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="13" name="password">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="13" name="email">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="13" name="mobile">
+      <Position>7</Position>
+      <DataType>bigint(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="13" name="status">
+      <Position>8</Position>
+      <Comment>0=deleted;(-1)=blocked;1=active and normal;2=un verified;</Comment>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="13" name="feedback">
+      <Position>9</Position>
+      <DataType>varchar(140)|0</DataType>
+    </column>
+    <column id="55" parent="13" name="num_of_add">
+      <Position>10</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="56" parent="13" name="admin">
+      <Position>11</Position>
+      <DataType>varchar(6)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;user&apos;</DefaultExpression>
+    </column>
+    <column id="57" parent="13" name="demo">
+      <Position>12</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="58" parent="13" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="13" name="mobile">
+      <ColNames>mobile</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="13" name="PRIMARY">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="61" parent="13" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <key id="62" parent="13" name="mobile">
+      <ColNames>mobile</ColNames>
+      <UnderlyingIndexName>mobile</UnderlyingIndexName>
+    </key>
+    <column id="63" parent="14" name="username">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="14" name="status">
+      <Position>2</Position>
+      <Comment>-1=blocked;and 0 = deleted;</Comment>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="14" name="reason_for_no_access">
+      <Position>3</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="14" name="when_no_access">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <key id="67" parent="14" name="PRIMARY">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

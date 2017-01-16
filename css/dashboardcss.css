@@ -1,0 +1,316 @@
+/**
+ * Created by PhpStorm.
+ * User: Manasvini Ganesh
+ */
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../login/dashboard2.0/img/laptop-with-coffee.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+	color:rgba(255,255,255,1);
+}
+
+p{
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: white;
+}
+.green{
+	color:rgba(0,255,100,0.3);
+}
+.white{
+	color:rgba(255,255,255,0.9);
+}
+.swapmart,
+.welcome_dashboard {
+    display: none;
+}
+
+.navbar-swapmart {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.swapmart-before,
+.swapmart-name {
+    text-transform: capitalize;
+}
+
+.swapmart-before {
+    margin: 15px 0;
+}
+
+.swapmart-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(0,0,0,0.35);
+	box-shadow:100px;
+	width:100%;
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer {
+    background:#fff;
+	background: rgba(0,0,0,0.87);
+	bottom:0px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	width:100%;
+}
+a{
+	color:rgba(255,255,255,0.99);
+}
+.section-heading{
+	color:rgba(0,0,255,0.6);
+}
+.form_field_title{
+	color:rgba(255,255,255,0.9);
+}
+.btn-default,.btn-primary,label.browse input[type="file"],.browse input[type="number"]{
+    border-color: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.6);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+	text-align:center;
+}
+
+.btn-default:hover,
+.btn-primary:hover,
+.btn-default:focus,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-default.focus,
+.btn-primary:active,
+.btn-default:active,
+.btn-primary.active,
+.btn-default.active,
+label.browse input[type="file"],
+.browse input[type="number"]{
+    color: #fff;
+	text-align:center;
+    border-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6);
+}
+.btn-default:hover,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:hover{
+	color:#fec503;
+}
+footer p {
+    margin: 0;
+    padding: 50px 0;
+	color:gray;
+}
+.red{
+	color:red;
+}
+.orange{
+	color:black;
+}
+label.browse input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+.browse{
+	display: inline-block;
+	cursor:pointer;
+}
+@media screen and (min-width:768px) {
+	#arrow{
+		display:none;
+	}
+	.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+.navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+    .swapmart {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+  
+    .welcome_dashboard {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+    
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 50px;
+    }
+
+    .navbar-default {
+        border: none;
+		background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background: #000;
+        background: rgba(0,0,0,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+	
+	.table_add{
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight:800;
+		font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+		letter-spacing: 1px;
+		color:rgba(255,255,255,0.8);
+		margin:0px;
+	}
+
+}
