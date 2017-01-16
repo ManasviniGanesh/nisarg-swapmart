@@ -4,6 +4,7 @@
 <li>Other than .idea and xampp directories download every other ones.</li>
 <li>Configure connect.php in "login" and "swapmart" directories accordin to your server (localhost or any remote server)</li>
 <li>Go to swapmart/index.php and launch the website</li>
+<li>To view the sample entries download swapmart.sql file and execute queries for creating database and tables as given in the file.</li>
 </ol>
 
 <b>Introduction</b> - 
