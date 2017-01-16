@@ -1,4 +1,13 @@
-# nisarg-swapmart
+#nisarg-swapmart
+<b>Configuration of the project for viewing</b> - 
+<ol>
+<li>Other than .idea and xampp directories download every other ones.</li>
+<li>Configure connect.php in "login" and "swapmart" directories accordin to your server (localhost or any remote server)</li>
+<li>Go to swapmart/index.php and launch the website</li>
+</ol>
+
+<b>Introduction</b> - 
+
 SwapMart is an E Commerce Website similiar to OLX and Quickr where classifieds are put up by comman man for comman man. But different from them in that - 
 SwapMart is aimed for students within <b>campus</b> to share or exchange their items online with ease. Items could be anything in between an old toaster to drafter or calculator. 
 Many students cannot affor these expensive items. ANd there are at times unavailablity of access of certain resources like notes of a good teacher or refernce books or bunch of question papers that can be bought online for small price.
