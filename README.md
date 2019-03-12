@@ -1,5 +1,5 @@
 <h1>SwapMart</h1>
-<h2>Configuration of the project for viewing</h2> - 
+<h2>Configuration of the project for viewing</h2> 
 <ol> 
   <li>Configure connect.php in "login" and "swapmart" directories accordin to your server (localhost or any remote server)</li>
   <li>Go to swapmart/index.php and launch the website</li>
@@ -71,6 +71,7 @@ Based on classification the products in SwapMart can be classified as -
     </li>
  </ul>
  
+ <h2>Achievement</h2>
 <ol>
   <li>The project was submitted for Nisarg 2016 by CSE Department Society Genesis.</li>
   <li>The project won Best Project Award for final year project 2016-17</li>
