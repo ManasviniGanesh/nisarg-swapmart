@@ -50,7 +50,7 @@ Based on classification the products in SwapMart can be classified as -
     <li>
       Prcing Style
       <ol>
-        <li>Fre</li>
+        <li>Free</li>
         <li>Rent</li>
         <li>Buy</li>
       </ol>
