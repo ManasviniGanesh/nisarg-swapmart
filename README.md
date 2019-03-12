@@ -73,6 +73,6 @@ Based on classification the products in SwapMart can be classified as -
  
  <h2>Achievement</h2>
 <ol>
-  <li>The project was submitted for Nisarg 2016 by CSE Department Society Genesis.</li>
-  <li>The project won Best Project Award for final year project 2016-17</li>
+  <li>The project was appreciated in Nisarg 2016, the Annual Tech Fest. It was represented by CSE Department Society Genesis.</li>
+	<li>The project won <b>Best Project Award</b> for final year project 2016-17</li>
  </ol>
